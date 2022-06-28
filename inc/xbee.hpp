@@ -1,16 +1,18 @@
 
 #pragma once
 
+
+
 #include <iostream>
+#include <string>
 
 class xbee_lib{
 public:
-	bool init_node(std::string xbee_address);
-	bool tx_packet(std::string packet_data);
-	bool tx_command(std::string packet_command);
-	std::string rx_packet(std::string packet);
+	int xbee_init(std::string mac_address);
+	int xbee_tx_str(std::string packet);
+	int xbee_tx_cmd(std::string cmd);
+	std::string xbee_rx(std::string mac_address);
 
-	
 private:
 
 

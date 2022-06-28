@@ -1,26 +1,33 @@
 
-#include <iostream>
-
 #include "../inc/xbee.hpp"
 
-bool xbee_lib::init_node(std::string xbee_address){
+
+int xbee_lib::xbee_init(std::string mac_address){
+	int error_code = 0;
 
 
+	return error_code;
 }
 
-bool xbee_lib::tx_packet(std::string packet_data){
+int xbee_tx_str(std::string packet){
+	int error_code = 0;
 
 
+	return error_code;
 }
 
-bool xbee_lib::tx_command(std::string packet_command){
+int xbee_tx_cmd(std::string cmd){
+	int error_code = 0;
 
 
+	return error_code;
 }
 
-std::string xbee_lib::rx_packet(std::string packet){
+std::string xbee_rx(std::string mac_address){
+	std::string packet;
 
-	
+
+	return packet;
 }
 
 
