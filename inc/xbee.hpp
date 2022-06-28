@@ -2,6 +2,7 @@
 #pragma once
 
 
+
 #include <iostream>
 #include <string>
 
@@ -11,7 +12,6 @@ public:
 	int xbee_tx_str(std::string packet);
 	int xbee_tx_cmd(std::string cmd);
 	std::string xbee_rx(std::string mac_address);
-
 
 private:
 
